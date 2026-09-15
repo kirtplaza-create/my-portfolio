@@ -7,3 +7,12 @@ body {
     background-color: #ffffff;
     line-height: 1.6;
 }
+
+/* hero section (sight violet theme) */
+.hero {
+    background-color: #f3effa; /* pinaka-light violet nga akong nakita */
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 2px solid #e2d9f3;
+}
+
