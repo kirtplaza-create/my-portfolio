@@ -32,3 +32,38 @@ body {
     border: 3px solid #7c5cbf; /* pang accent violet border */
 }
 
+/* typography in hero */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #2c1b4d; /* dark violet */
+}
+
+.tagline {
+    font-weight: bold;
+    color: #6a4c9c; /* medium light violet */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.short-bio {
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background-color: #7c5cbf; /* light purple/violet */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6142a3; /* slightly darker violet on hover */
+}
+
