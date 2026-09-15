@@ -16,3 +16,19 @@ body {
     border-bottom: 2px solid #e2d9f3;
 }
 
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* profile image */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ddd; /* pang fallback color if ang image kay missing */
+    margin-bottom: 15px;
+    border: 3px solid #7c5cbf; /* pang accent violet border */
+}
+
