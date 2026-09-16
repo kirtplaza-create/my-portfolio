@@ -51,7 +51,7 @@ h1 {
     margin-bottom: 25px;
 }
 
-/* Button Styling */
+/* button Styling */
 .btn {
     display: inline-block;
     background-color: #7c5cbf; /* light purple/violet */
@@ -67,3 +67,28 @@ h1 {
     background-color: #6142a3; /* slightly darker violet on hover */
 }
 
+/* main content */
+.content-section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content-section section {
+    margin-bottom: 30px;
+}
+
+.content-section h2, 
+.content-section h3 {
+    color: #2c1b4d;
+    margin-bottom: 10px;
+}
+
+.content-section ul, 
+.content-section ol {
+    padding-left: 20px;
+}
+
+.content-section li {
+    margin-bottom: 5px;
+}
