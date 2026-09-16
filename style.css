@@ -23,8 +23,8 @@ body {
 
 /* profile image */
 .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
     background-color: #ddd; /* pang fallback color if ang image kay missing */
@@ -51,7 +51,7 @@ h1 {
     margin-bottom: 25px;
 }
 
-/* button Styling */
+/* button styling */
 .btn {
     display: inline-block;
     background-color: #7c5cbf; /* light purple/violet */
