@@ -1,6 +1,6 @@
 /* general page styling */
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333333;
@@ -91,4 +91,33 @@ h1 {
 
 .content-section li {
     margin-bottom: 5px;
+}
+
+/* skills section grid layout (Activity 3) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* reusable skill card styling */
+.skill-card {
+    background-color: #fcfbfe;
+    border: 1px solid #e2d9f3;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.skill-card h4 {
+    margin: 0 0 4px 0;
+    color: #2c1b4d;
+    font-size: 0.95rem;
+}
+
+.skill-card p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #666666;
 }
