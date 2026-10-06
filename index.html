@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pang responsive design -->
     <title>Kirt Gerald R. Plaza - Portfolio</title>
     <!-- pang connect sa external CSS file -->
     <link rel="stylesheet" href="style.css">
@@ -13,7 +13,7 @@
     <header class="hero">
         <div class="hero-content">
             <!-- profile photo -->
-            <img src="images/profile.png" alt="Profile Picture" class="profile-img">
+            <img src="images/profile.png" alt="Profile Picture" title="Profile Picture" class="profile-img">
             
             <!-- full name -->
             <h1>Hi, I'm Kirt Gerald R. Plaza</h1>
@@ -33,7 +33,7 @@
     <main class="content-section" id="about">
         <!-- about me section -->
         <section>
-            <h2>About Me</h2>
+            <h3>About Me</h3>
             <p>I am an Information System student from Caraga State University who enjoys learning about web development, UI/UX Design, and user-friendly software.</p>
         </section>
 
@@ -47,34 +47,41 @@
             </ul>
         </section>
 
-        <!-- my skills section (Activity 3) -->
+        <!-- my skills section (activity 3) -->
         <section>
             <h3>My Skills</h3>
             <div class="skills-grid">
+
                 <div class="skill-card">
                     <h4>HTML</h4>
                     <p>Webpage structure</p>
                 </div>
+
                 <div class="skill-card">
                     <h4>CSS</h4>
                     <p>Webpage styling</p>
                 </div>
+
                 <div class="skill-card">
                     <h4>JavaScript</h4>
                     <p>Web interaction</p>
                 </div>
+
                 <div class="skill-card">
                     <h4>C</h4>
                     <p>Programming fundamentals</p>
                 </div>
+
                 <div class="skill-card">
                     <h4>PostgreSQL</h4>
                     <p>Database queries</p>
                 </div>
+
                 <div class="skill-card">
                     <h4>Git</h4>
                     <p>Version control</p>
                 </div>
+                
             </div>
         </section>
 
@@ -86,6 +93,47 @@
                 <li>Build useful web applications.</li>
                 <li>Become a professional software developer.</li>
             </ol>
+        </section>
+
+        <!-- my projects section (activity 4) -->
+        <section>
+            <h3>My Projects</h3>
+            <div class="projects-container">
+
+                <!-- Project 1: AquaTrack -->
+                <div class="project-card">
+                    <img src="images/aquatracklogo.png" alt="AquaTrack Logo" class="project-img">
+                    <div class="project-info">
+                        <h4>AquaTrack</h4>
+                        <p class="project-desc">A point-of-sale and water refilling station management system designed to manage sales, customer transactions, and water orders.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> Vue.js, Laravel, MySQL</p>
+                        <a href="#" class="btn-project">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Disaster Connect -->
+                <div class="project-card">
+                    <img src="images/DCLogo.png" alt="Disaster Connect Logo" class="project-img">
+                    <div class="project-info">
+                        <h4>Disaster Connect</h4>
+                        <p class="project-desc">An AI-driven disaster relief resource matching and intelligence system that helps LGUs assess disaster needs, analyze affected areas, and match available resources with affected communities.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> Vue.js 3, Firebase Cloud Functions, Firestore, OpenRouter API</p>
+                        <a href="#" class="btn-project">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Library Management System -->
+                <div class="project-card">
+                    <img src="images/LibraryLogo.jpg" alt="Library Management System Logo" class="project-img">
+                    <div class="project-info">
+                        <h4>Library Management System</h4>
+                        <p class="project-desc">A frontend-based library management interface designed to demonstrate the management of books, library users, and borrowing-related information.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> Vue.js</p>
+                        <a href="#" class="btn-project">View Project</a>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
 

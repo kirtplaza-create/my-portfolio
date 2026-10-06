@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333333;
+    color: #333333; /* dark gray text color for readability */
     background-color: #ffffff;
     line-height: 1.6;
 }
@@ -18,7 +18,7 @@ body {
 
 .hero-content {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto; /* pang center sa content */
 }
 
 /* profile image */
@@ -32,7 +32,7 @@ body {
     border: 3px solid #7c5cbf; /* pang accent violet border */
 }
 
-/* typography in hero */
+/* typography sa hero */
 h1 {
     font-size: 2rem;
     margin-bottom: 5px;
@@ -69,24 +69,24 @@ h1 {
 
 /* main content */
 .content-section {
-    max-width: 700px;
+    max-width: 700px; 
     margin: 40px auto;
     padding: 0 20px;
 }
 
 .content-section section {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* spacing between sections */
 }
 
 .content-section h2, 
 .content-section h3 {
-    color: #2c1b4d;
+    color: #2c1b4d; /* dark violet for headings */
     margin-bottom: 10px;
 }
 
 .content-section ul, 
 .content-section ol {
-    padding-left: 20px;
+    padding-left: 20px; /* indentation for lists */
 }
 
 .content-section li {
@@ -96,18 +96,18 @@ h1 {
 /* skills section grid layout (Activity 3) */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* responsive nga grid layout */
+    gap: 12px; /* spacing between skill cards */
     margin-top: 15px;
 }
 
 /* reusable skill card styling */
 .skill-card {
-    background-color: #fcfbfe;
-    border: 1px solid #e2d9f3;
+    background-color: #fcfbfe; /* very light violet background */
+    border: 1px solid #e2d9f3; /* light violet border */
     border-radius: 8px;
     padding: 12px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03);
 }
 
 .skill-card h4 {
@@ -120,4 +120,80 @@ h1 {
     margin: 0;
     font-size: 0.75rem;
     color: #666666;
+}
+
+/* Projects Section Flexbox Layout (Activity 4) */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* spacing between project cards */
+    margin-top: 15px;
+}
+
+/* Reusable Project Card */
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: #fcfbfe;
+    border: 1px solid #e2d9f3;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* Project Image Sizing */
+.project-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 4px;
+    border: 1px solid #e2d9f3;
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+/* Nested Content Area */
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.project-info h4 {
+    margin: 0;
+    color: #2c1b4d;
+    font-size: 1.1rem;
+}
+
+.project-desc {
+    margin: 0;
+    font-size: 0.88rem;
+    color: #555555;
+}
+
+.project-tech {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #6a4c9c;
+}
+
+/* View Project Button Link */
+.btn-project {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 4px;
+    padding: 6px 12px;
+    background-color: #7c5cbf;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-project:hover {
+    background-color: #6142a3;
 }
