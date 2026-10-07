@@ -295,12 +295,65 @@ h1 {
 }
 
 /* Contact Link Styling */
-.contact-link {
-    color: #7c5cbf;
-    font-weight: bold;
-    text-decoration: none;
+.contact-form {
+    background-color: #fcfbfe;
+    border: 1px solid #e2d9f3;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.03);
 }
 
-.contact-link:hover {
-    text-decoration: underline;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #2c1b4d;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #dcd1f0;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: #333333;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* focus state when user clicks into an input field */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #7c5cbf;
+    box-shadow: 0 0 0 3px rgba(124, 92, 191, 0.15);
+}
+
+.form-group textarea {
+    resize: vertical; /* allows vertical resizing only */
+}
+
+.btn-submit {
+    background-color: #7c5cbf;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* hover state for send button */
+.btn-submit:hover {
+    background-color: #6142a3;
 }
