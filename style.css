@@ -79,8 +79,8 @@ body {
 
 /* profile image */
 .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     background-color: #ddd; /* pang fallback color if ang image kay missing */
@@ -357,6 +357,22 @@ h1 {
 /* hover effect for submit button */
 .btn-submit:hover {
     background-color: #6142a3;
+}
+
+/* Footer Styling (Activity 9) */
+.footer {
+    background-color: #f3effa;
+    border-top: 2px solid #e2d9f3;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #6a4c9c;
+    font-weight: 600;
 }
 
 /* Responsive Design and Media Queries (Activity 8) */
