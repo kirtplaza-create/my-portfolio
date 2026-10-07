@@ -197,3 +197,43 @@ h1 {
 .btn-project:hover {
     background-color: #6142a3;
 }
+
+/* Education Section Table Styling (Activity 5) */
+.table-wrapper {
+    overflow-x: auto; /* Makes table scrollable on small mobile screens */
+    margin-top: 15px;
+}
+
+.edu-table {
+    width: 100%;
+    border-collapse: collapse; /* Merges adjacent cell borders */
+    font-size: 0.9rem;
+    background-color: #fcfbfe;
+    border: 1px solid #e2d9f3;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.edu-table th,
+.edu-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2d9f3;
+}
+
+/* Table Header */
+.edu-table th {
+    background-color: #7c5cbf; /* Darker violet header */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Alternating Row Color for Clean Look */
+.edu-table tbody tr:nth-child(even) {
+    background-color: #f3effa;
+}
+
+/* Hover Effect on Rows */
+.edu-table tbody tr:hover {
+    background-color: #eae1f7;
+}
