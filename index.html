@@ -9,8 +9,23 @@
 </head>
 <body>
 
+    <!-- sticky navigation bar (activity 6) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- hero / top introduction section -->
-    <header class="hero">
+    <header class="hero" id="home">
         <div class="hero-content">
             <!-- profile photo -->
             <img src="images/profile.png" alt="Profile Picture" title="Profile Picture" class="profile-img">
@@ -30,9 +45,9 @@
     </header>
 
     <!-- main content section -->
-    <main class="content-section" id="about">
+    <main class="content-section">
         <!-- about me section -->
-        <section>
+        <section id="about">
             <h3>About Me</h3>
             <p>I am an Information System student from Caraga State University who enjoys learning about web development, UI/UX Design, and user-friendly software.</p>
         </section>
@@ -47,8 +62,18 @@
             </ul>
         </section>
 
-        <!-- my skills section (activity 3) -->
+        <!-- my goals section -->
         <section>
+            <h3>My Goals</h3>
+            <ol>
+                <li>Improve my front-end development skills.</li>
+                <li>Build useful web applications.</li>
+                <li>Become a professional software developer.</li>
+            </ol>
+        </section>
+
+        <!-- my skills section (activity 3) -->
+        <section id="skills">
             <h3>My Skills</h3>
             <div class="skills-grid">
 
@@ -85,18 +110,8 @@
             </div>
         </section>
 
-        <!-- my goals section -->
-        <section>
-            <h3>My Goals</h3>
-            <ol>
-                <li>Improve my front-end development skills.</li>
-                <li>Build useful web applications.</li>
-                <li>Become a professional software developer.</li>
-            </ol>
-        </section>
-
         <!-- my projects section (activity 4) -->
-        <section>
+        <section id="projects">
             <h3>My Projects</h3>
             <div class="projects-container">
 
@@ -137,7 +152,7 @@
         </section>
 
         <!-- my education section (activity 5) -->
-        <section>
+        <section id="education">
             <h3>My Education</h3>
             <div class="table-wrapper">
                 <table class="edu-table">
@@ -172,6 +187,13 @@
                     </tbody>
                 </table>
             </div>
+        </section>
+
+        <!-- contact section (activity 6 link requirement) -->
+        <section id="contact">
+            <h3>Contact Me</h3>
+            <p>Feel free to reach out for collaborations or web development inquiries!</p>
+            <p>Email: <a href="mailto:kirtgeraldplaza27@gmail.com" class="contact-link">kirtgeraldplaza@gmail.com</a></p>
         </section>
     </main>
 

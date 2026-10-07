@@ -1,3 +1,9 @@
+/* smooth scrolling when clicking menu links */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; /* offset for sticky navbar height */
+}
+
 /* general page styling */
 body {
     font-family: Arial, sans-serif;
@@ -6,6 +12,56 @@ body {
     color: #333333; /* dark gray text color for readability */
     background-color: #ffffff;
     line-height: 1.6;
+}
+
+/* Sticky Navigation Bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e2d9f3;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2c1b4d;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+/* hover effects */
+.nav-links a:hover {
+    color: #7c5cbf;
+    background-color: #f3effa;
 }
 
 /* hero section (sight violet theme) */
@@ -75,7 +131,7 @@ h1 {
 }
 
 .content-section section {
-    margin-bottom: 30px; /* spacing between sections */
+    margin-bottom: 40px; /* spacing between sections */
 }
 
 .content-section h2, 
@@ -122,7 +178,7 @@ h1 {
     color: #666666;
 }
 
-/* Projects Section Flexbox Layout (Activity 4) */
+/* Projects Container */
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -198,7 +254,7 @@ h1 {
     background-color: #6142a3;
 }
 
-/* Education Section Table Styling (Activity 5) */
+/* Education Table Styling (Activity 5) */
 .table-wrapper {
     overflow-x: auto; /* Makes table scrollable on small mobile screens */
     margin-top: 15px;
@@ -236,4 +292,15 @@ h1 {
 /* Hover Effect on Rows */
 .edu-table tbody tr:hover {
     background-color: #eae1f7;
+}
+
+/* Contact Link Styling */
+.contact-link {
+    color: #7c5cbf;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
 }
