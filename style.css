@@ -178,7 +178,7 @@ h1 {
     color: #666666;
 }
 
-/* Projects Container */
+/* Projects Section Flexbox Layout (Activity 4) */
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -254,6 +254,7 @@ h1 {
     background-color: #6142a3;
 }
 
+
 /* Education Table Styling (Activity 5) */
 .table-wrapper {
     overflow-x: auto; /* Makes table scrollable on small mobile screens */
@@ -294,7 +295,7 @@ h1 {
     background-color: #eae1f7;
 }
 
-/* Contact Link Styling */
+/* Contact Form Styling (Activity 7) */
 .contact-form {
     background-color: #fcfbfe;
     border: 1px solid #e2d9f3;
@@ -351,9 +352,75 @@ h1 {
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
-
-/* hover state for send button */
+/* hover effect for submit button */
 .btn-submit:hover {
     background-color: #6142a3;
+}
+
+/* Responsive Design and Media Queries (Activity 8) */
+/* Tablet & Smaller Devices (Below 768px) like ipad */
+@media (max-width: 768px) {
+    /* Navbar wraps vertically to fit small screens */
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 4px 8px;
+    }
+
+    /* Hero heading font adjustment */
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    /* Project card stacks vertically on tablets/mobiles */
+    .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .project-img {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+/* Mobile Devices (Below 480px) like iphone */
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .content-section {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    /* Grid adapts to narrower mobile cards */
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .edu-table th, 
+    .edu-table td {
+        padding: 10px 8px;
+        font-size: 0.82rem;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
 }
