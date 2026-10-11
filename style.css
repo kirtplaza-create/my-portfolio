@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Brass Mono';
+  src: url('/images/BrassMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* smooth scrolling when clicking menu links */
 html {
     scroll-behavior: smooth;
@@ -6,10 +14,10 @@ html {
 
 /* general page styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Brass Mono', monospace;
     margin: 0;
     padding: 0;
-    color: #333333; /* dark gray text color for readability */
+    color: #2d2b38; /* dark gray text color for readability */
     background-color: #ffffff;
     line-height: 1.6;
 }
@@ -91,7 +99,7 @@ body {
 /* typography sa hero */
 h1 {
     font-size: 2rem;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     color: #2c1b4d; /* dark violet */
 }
 
@@ -131,7 +139,7 @@ h1 {
 }
 
 .content-section section {
-    margin-bottom: 40px; /* spacing between sections */
+    margin-bottom: 30px; /* spacing between sections */
 }
 
 .content-section h2, 
@@ -140,9 +148,11 @@ h1 {
     margin-bottom: 10px;
 }
 
-.content-section ul, 
+.content-section ul {
+    padding-left: 25px;
+} 
 .content-section ol {
-    padding-left: 20px; /* indentation for lists */
+    padding-left: 38px; /* indentation for lists */
 }
 
 .content-section li {
@@ -344,6 +354,7 @@ h1 {
 
 .btn-submit {
     background-color: #7c5cbf;
+    font-family: inherit;
     color: #ffffff;
     border: none;
     padding: 12px 24px;
