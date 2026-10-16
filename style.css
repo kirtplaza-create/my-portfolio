@@ -248,7 +248,7 @@ h1 {
 /* View Project Button Link */
 .btn-project {
     display: inline-block;
-    align-self: flex-start;
+    align-self: flex-start; /* aligns button to the start of the flex container */
     margin-top: 4px;
     padding: 6px 12px;
     background-color: #7c5cbf;
@@ -257,7 +257,7 @@ h1 {
     font-size: 0.8rem;
     font-weight: bold;
     border-radius: 4px;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease; /* smooth transition for hover effect */
 }
 
 .btn-project:hover {
